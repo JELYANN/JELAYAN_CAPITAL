@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Django
+db.sqlite3
+*.log
+
+# Docker
+staticfiles/
+
+# macOS
+.DS_Store
+
+# Ngrok
+ngrok.yml

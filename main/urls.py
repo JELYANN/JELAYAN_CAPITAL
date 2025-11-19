@@ -1,6 +1,9 @@
+# main/urls.py
 from django.urls import path # type: ignore
-from . import views
+from .views import index, info_page, info_api
 
 urlpatterns = [
-    path('', views.index, name='home'),
+    path('', index, name='index'),              # root -> index.html (opsional)
+    path('api/info/', info_page, name='info_page'),      # HTML page
+    path('api/info/json/', info_api, name='info_json'),  # JSON (opsional)
 ]
